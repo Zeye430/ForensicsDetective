@@ -199,8 +199,8 @@ def main():
     print("Classes: Word (0), Google Docs (1), Python/ReportLab (2)")
     print("=" * 60)
     
-    # Load dataset (use subset for initial testing)
-    X, y = load_3class_dataset(max_samples_per_class=50)  # Small subset first
+    # Load dataset (use larger subset for better testing)
+    X, y = load_3class_dataset(max_samples_per_class=100)  # Larger subset
     
     # Analyze class separability
     class_stats = analyze_class_separability(X, y)
